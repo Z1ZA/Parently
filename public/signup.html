@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Blog : Homepage</title>
+    <link
+      rel="stylesheet"
+      href="css/login.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <img
+            src="./img/family-logo.png"
+            class="logo"
+            alt="logo"
+          />
+          <div class="nav-title">Parently</div>
+        </div>
+        <ul class="menu-container">
+          <li class="menu-item">
+            <a
+              href="/"
+              class="menu"
+              >home</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href=""
+              class="menu"
+              >konsultasi</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href=""
+              class="menu"
+              >about us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a
+              href="login.html"
+              class="menu"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="login-section">
+      <img
+        src="./img/St. Patrick's Day parade-pana.svg"
+        alt="People illustrations by Storyset"
+        class="login-image"
+      />
+      <div class="login-container">
+        <h1 class="login-title">Sign up</h1>
+        <p class="login-text">Silahkan sign up menggunakan data yang valid</p>
+
+        <div class="container">
+          <form>
+            <div class="text_field">
+              <label>Username</label>
+              <input
+                type="text"
+                required
+                class="column"
+                id="usernameSignup"
+              />
+            </div>
+
+            <div class="text_field">
+              <label>Password</label>
+              <input
+                type="password"
+                required
+                class="column"
+                id="passwordSignup"
+              />
+            </div>
+
+            <div class="text_field">
+              <label>Email</label>
+              <input
+                type="email"
+                required
+                class="column"
+                id="email"
+              />
+            </div>
+
+            <input
+              type="submit"
+              value="Sign up"
+              class="btn"
+              id="btnSignup"
+            />
+
+            <div>already have account?</div>
+
+            <div class="signup_link">
+              Please!
+              <a href="/login">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="js/signup.js"
+    ></script>
+  </body>
+</html>
