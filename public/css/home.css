@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 body {
   width: 100%;
   position: relative;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 
 section {
@@ -99,6 +99,18 @@ a {
   text-transform: capitalize;
 }
 
+.logout {
+  border: none;
+  background-color: white;
+  font-size: 17px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  color: red;
+}
+
 .blogs-section {
   width: 100%;
   padding: 50px 5vw;
@@ -146,4 +158,8 @@ a {
   margin: 0 auto;
   justify-content: space-between;
   gap: 20px;
+}
+
+.login:hover {
+  color: red;
 }
