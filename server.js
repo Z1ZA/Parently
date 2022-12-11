@@ -28,8 +28,8 @@ app.get('/signup', (req, res) => {
   res.sendFile(path.join(initial_path, 'signup.html'));
 });
 
-app.get("/signup", (req, res) => {
-  res.sendFile(path.join(initial_path, "konsultasi.html"));
+app.get('/konsultasi', (req, res) => {
+  res.sendFile(path.join(initial_path, 'konsultasi.html'));
 });
 
 // upload link
