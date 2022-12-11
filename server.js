@@ -28,6 +28,10 @@ app.get('/signup', (req, res) => {
   res.sendFile(path.join(initial_path, 'signup.html'));
 });
 
+app.get('/signup', (req, res) => {
+  res.sendFile(path.join(initial_path, 'konsultasi.html'));
+});
+
 // upload link
 app.post('/upload', (req, res) => {
   let file = req.files.image;
