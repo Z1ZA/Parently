@@ -2,63 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Blog : Homepage</title>
-    <link
-      rel="stylesheet"
-      href="css/login.css"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog : Signup</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="nav-logo">
-          <img
-            src="./img/family-logo.png"
-            class="logo"
-            alt="logo"
-          />
-          <div class="nav-title">Parently</div>
-        </div>
-        <ul class="menu-container">
-          <li class="menu-item">
-            <a
-              href="/"
-              class="menu"
-              >home</a
-            >
-          </li>
-          <li class="menu-item">
-            <a
-              href="https://github.com/Z1ZA/Parently"
-              class="menu"
-              >about us</a
-            >
-          </li>
-          <li class="menu-item">
-            <a
-              href="login.html"
-              class="menu"
-              >Login</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/family-logo.png" alt="logo" />
+        <h1 class="logo-title">Parently</h1>
+      </div>
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="https://github.com/Z1ZA/Parently">About us</a>
+        </li>
+        <li>
+          <a href="/login" class="login">Login</a>
+        </li>
+      </ul>
+    </nav>
 
     <main class="login-section">
-      <img
-        src="./img/St. Patrick's Day parade-pana.svg"
-        alt="People illustrations by Storyset"
-        class="login-image"
-      />
       <div class="login-container">
         <h1 class="login-title">Sign up</h1>
         <p class="login-text">Silahkan sign up menggunakan data yang valid</p>
@@ -67,12 +44,7 @@
           <form>
             <div class="text_field">
               <label>Username</label>
-              <input
-                type="text"
-                required
-                class="column"
-                id="usernameSignup"
-              />
+              <input type="text" required class="column" id="usernameSignup" />
             </div>
 
             <div class="text_field">
@@ -87,20 +59,10 @@
 
             <div class="text_field">
               <label>Email</label>
-              <input
-                type="email"
-                required
-                class="column"
-                id="email"
-              />
+              <input type="email" required class="column" id="email" />
             </div>
 
-            <input
-              type="submit"
-              value="Sign up"
-              class="btn"
-              id="btnSignup"
-            />
+            <input type="submit" value="Sign up" class="btn" id="btnSignup" />
 
             <div>already have account?</div>
 
@@ -112,10 +74,7 @@
         </div>
       </div>
     </main>
-
-    <script
-      type="module"
-      src="js/signup.js"
-    ></script>
+    <script src="js/drawer.js"></script>
+    <script type="module" src="js/signup.js"></script>
   </body>
 </html>
