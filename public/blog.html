@@ -2,73 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog :</title>
 
-    <link
-      rel="stylesheet"
-      href="css/home.css"
-    />
-    <link
-      rel="stylesheet"
-      href="css/editor.css"
-    />
-    <link
-      rel="stylesheet"
-      href="css/blog.css"
-    />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/editor.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <nav class="navbar">
-      <div class="nav-logo">
-        <img
-          src="./img/family-logo.png"
-          class="logo"
-          alt="logo"
-        />
-        <div class="nav-title">Parently</div>
+      <div class="logo">
+        <img src="img/family-logo.png" alt="logo" />
+        <h1 class="logo-title">Parently</h1>
       </div>
-      <ul class="menu-container">
-        <li class="menu-item">
-          <a
-            href="/admin"
-            class="menu"
-            >home</a
-          >
+      <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="/">Home</a>
         </li>
-        <li class="menu-item">
-          <a
-            href=""
-            class="menu"
-            >konsultasi</a
-          >
+        <li>
+          <a href="/konsultasi">Konsultasi</a>
         </li>
-        <li class="menu-item">
-          <a
-            href=""
-            class="menu"
-            >about us</a
-          >
-        </li>
-        <li class="menu-item">
-          <button
-            class="logout"
-            id="logoutButton"
-          >
-            Logout
-          </button>
+        <li>
+          <a href="/login" class="login">Login</a>
         </li>
       </ul>
     </nav>
-
-    <div class="banner"></div>
+    <div class="banner-container">
+      <div class="banner"></div>
+    </div>
 
     <div class="blog">
       <h1 class="title"></h1>
@@ -78,14 +44,7 @@
 
     <h1 class="sub-heading">Read more</h1>
 
-    <section class="blogs-section">
-      <!-- <div class="blog-card">
-            <img src="img/header.png" class="blog-image" alt="">
-            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
-            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
-            <a href="/" class="btn dark">read</a>
-        </div> -->
-    </section>
+    <section class="blogs-section"></section>
 
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
@@ -93,9 +52,5 @@
     <script src="js/firebase.js"></script>
     <script src="js/home.js"></script>
     <script src="js/blog.js"></script>
-    <script
-      type="module"
-      src="js/logout.js"
-    ></script>
   </body>
 </html>

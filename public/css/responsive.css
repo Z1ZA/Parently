@@ -1,0 +1,59 @@
+@media screen and (min-width: 600px) {
+  .blogs-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  .menu {
+    margin-top: 15px;
+    display: none;
+  }
+  .menu.active,
+  .toggle {
+    display: block;
+  }
+  .toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .blogs-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #hamburgerButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .jumbotron-img {
+    display: none;
+  }
+  .menu-container {
+    position: absolute;
+  }
+  #hamburgerButton {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blogs-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .blogs-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
